@@ -1,0 +1,41 @@
+#top {
+    background-color: #FF0000;
+    background-image: url(colosseum.jpg);
+    background-position: 50% 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: auto;  
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+}
+
+#middle {
+   background-color: #00FF00;
+    background-image: url(river.jpg);
+    background-position: 50% 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: auto;
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+}
+
+#bottom {
+    background-color: #0000FF;
+    background-image: url(field-path.jpg);
+    background-position: 50% 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: auto;
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+}
