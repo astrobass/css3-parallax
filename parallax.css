@@ -1,41 +1,66 @@
-#top {
-    background-color: #FF0000;
-    background-image: url(colosseum.jpg);
-    background-position: 50% 0;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    height: auto;  
-    margin: 0 auto; 
-    width: 100%; 
-    position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    padding: 100px 0;
+html {
+  min-width: 960px;
+  max-width: 960px;
 }
 
-#middle {
-   background-color: #00FF00;
-    background-image: url(river.jpg);
-    background-position: 50% 0;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    height: auto;
-    margin: 0 auto; 
-    width: 100%; 
-    position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    padding: 100px 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-#bottom {
-    background-color: #0000FF;
-    background-image: url(field-path.jpg);
-    background-position: 50% 0;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    height: auto;
-    margin: 0 auto; 
-    width: 100%; 
-    position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    padding: 100px 0;
+.parallax {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+  -webkit-perspective-origin-x: 100%;
+  perspective-origin-x: 100%;
+}
+
+.parallax-group {
+  position: relative;
+  height: 500px;
+  height: 100vh;
+  background-position: 50% 0px;
+  background-size: cover;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.parallax-layer {
+  position: absolute;
+  background-position: 50% 0px;
+  background-size: cover;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform-origin-x: 100%;
+  transform-origin-x: 100%;
+}
+
+.parallax-front {
+  -webkit-transform: translateZ(90px) scale(.7);
+  transform: translateZ(90px) scale(.7);
+  z-index: 1;
+}
+
+.parallax-middle {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 4;
+}
+
+.parallax-back {
+  -webkit-transform: translateZ(-300px) scale(2);
+  transform: translateZ(-300px) scale(2);
+  z-index: 3;
+}
+
+.parallax-very-back {
+  -webkit-transform: translateZ(-600px) scale(3);
+  transform: translateZ(-600px) scale(3);
+  z-index: 2;
 }
